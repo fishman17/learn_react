@@ -12,6 +12,7 @@ class TodoStore {
     }
     @action addTodo(title,priority){
         let item = new TodoModel(this,title,priority);
+        this.todos.push(item);
     }
 }
 export default TodoStore
