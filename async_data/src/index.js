@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import { createStore, applyMiddleware} from 'redux'
 import { createLogger } from 'redux-logger'
 import registerServiceWorker from './registerServiceWorker';
-import reducer from './reducers'
+import reducer from './'
 const middleware = [ thunk ]
 middleware.push(createLogger())
 
